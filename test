@@ -1,0 +1,86 @@
+# Quantumel X 进阶配置
+#
+# 日期：2023-11-11 23:57:35
+#配置作者：https://t.me/iKeLee
+# 适用版本：v1.1.0及以上
+[一般的]
+profile_img_url = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/144px/Quantumult_X.png
+resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+network_check_url = http://bing.com
+server_check_url = http://www.apple.com/library/test/success.html
+服务器检查超时= 2000
+geo_location_checker = http://ip-api.com/json/?lang=zh-CN, https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/GeoIP/Geo_Location_Checker_for_QX.js
+dns_exclusion_list = *.cmpassport.com、*.jegotrip.com.cn、*.icitymobile.mobi、id6.me
+[域名]
+更喜欢-doh3
+无系统
+服务器 = 223.5.5.5，exclusion_ssids = PHICOMM_5G
+服务器 = 223.6.6.6，exclusion_ssids = PHICOMM_5G
+服务器 = 10.0.0.1:7874，included_ssids = PHICOMM_5G
+doh-服务器 = https://223.5.5.5/dns-query、https://223.6.6.6/dns-query、exclusion_ssids = PHICOMM_5G
+[政策]
+ssid = 香港场景, 香港策略, 香港策略, PHICOMM_5G:DIRECT, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+ssid = 台湾场景、台湾策略、台湾策略、PHICOMM_5G:DIRECT、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+ssid = 日本场景、日本策略、日本策略、PHICOMM_5G:DIRECT、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+ssid = 韩国场景、韩国策略、韩国策略、PHICOMM_5G:DIRECT、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+ssid = 美国场景、美国策略、美国策略、PHICOMM_5G:DIRECT、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+ssid = 新国场景、新国策略、新国策略、PHICOMM_5G:DIRECT、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+static = 香港, 策略香港延迟优化, 香港故障转移, 香港负载均衡, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+static = 台湾策略、台湾延迟优选、台湾故障转移、台湾负载均衡、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+static = 日本策略、日本延迟优化、日本故障转移、日本负载均衡、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+static = 韩国策略、韩国延迟优选、韩国故障转移、韩国负载均衡、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+static = 美国、策略美国延迟优化、美国故障转移、美国负载均衡、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+static = 新国策略、新国延迟优选、新国故障转移、新国负载均衡、img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark = 香港延时优选, resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\ b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, 检查间隔 = 60, 存活检查 = false, 容忍度= 0，img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+url-latency-benchmark = 台湾延时优选, resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇹🇼|台湾|(\b(TW|Tai|台湾) )\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, 检查间隔 = 60, 存活检查 = false ，容差= 0，img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark = 日本延时优选, resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$，查看-interval = 60，alive-checking = false，公差= 0，img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark = 韩国延时优选, resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇰🇷| 韩国|韩国|首尔|(\b(KR |Korea)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, 检查间隔 = 60, 活体检查= false，容差 = 0，img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+url-latency-benchmark = 美国延迟优选, resources-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|美国)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$，check-interval = 60，alive-checking = false，tolerance = 0，img-url = https://raw.githubusercontent .com/Orz-3/mini/master/Color/US.png
+url-latency-benchmark = 新国延时优选, resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|)新加坡)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, 检查间隔 = 60, 活着检查 = false，容差 = 0，img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+available = 香港故障转移，resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))( ?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/Orz-3/迷你/master/Color/HK.png
+available = 台湾故障转移，resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇹🇼|台湾|(\b(TW|Tai|台湾)\b)) )(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/Orz- 3/mini/master/Color/TW.png
+可用 = 日本故障转移, 资源标签正则表达式 = ., 服务器标签正则表达式 = ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\ b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https: //raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+可用 = 韩国故障转移, 资源标签正则表达式 = ., 服务器标签正则表达式 = ^(?=.*((?i)🇰🇷| 韩国|韩国|首尔|(\b(KR|韩国)\b )))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/ Orz-3/mini/master/Color/KR.png
+可用 = 美国故障转移，资源标签正则表达式 = .，服务器标签正则表达式 = ^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙| 硅谷| 拉斯维加斯| 洛杉矶| 圣何塞| 圣克拉拉| 西雅图| 芝加哥|(\b(US|美国)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+可用 = 新加坡故障转移, 资源标签正则表达式 = ., 服务器标签正则表达式 = ^(?=.*((?i)🇸🇬|新加坡| 狮|(\b(SG|新加坡)\b) ))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/Orz -3/mini/master/Color/SG.png
+dest-hash = 香港负载均衡, Resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)) )(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/Orz- 3/mini/master/Color/HK.png
+dest-hash = 台湾负载均衡, Resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇹🇼|台湾|(\b(TW|Tai|台湾)\b )))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/ Orz-3/mini/master/Color/TW.png
+dest-hash = 日本负载均衡, Resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉| (\b(JP|日本)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+dest-hash = 韩国负载均衡, Resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇰🇷| 韩国|韩国|首尔|(\b(KR|韩国) \b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent. com/Orz-3/mini/master/Color/KR.png
+dest-hash = 美国负载均衡, Resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|美国)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+dest-hash = 新加坡负载均衡, Resource-tag-regex = ., server-tag-regex = ^(?=.*((?i)🇸🇬|新加坡| 狮|(\b(SG|新加坡)\ b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$, img-url = https://raw.githubusercontent.com /Orz-3/mini/master/Color/SG.png
+static = 游戏手册, 资源标签正则表达式 = ., 服务器标签正则表达式 = ^(?=.*((?i)游戏|🎮|(\b(GAME)\b)))(?!.* ((?i)回国|校园)).*$, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+静态 = 全球手册, 资源标签正则表达式 = ., 服务器标签正则表达式 = ^(?=.*(.*))(?!.*((?i)邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|越来越|机场|下一步|版本|官址|备用|越来越|过渡|已用|联系|邮箱|工单|群|劳动力|倒卖|阻止|国内| 🎮|(\b(游戏|使用|已用|总计|过期|电子邮件|面板)\b|(\d{4}-\d{2}-\d{2}|\dG)))).* $, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+[服务器远程]
+[过滤器远程]
+https://gitlab.com/lodepuly/anti-ad/-/raw/master/anti-ad-surge.txt，标签=反AD，强制策略=拒绝，更新间隔= 86400，选择解析器=真，启用=真
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/Telegram/Telegram.list，tag = Telegram，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用 = true
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/TikTok/TikTok.list，tag = TikTok，force-policy = 日本场景，update-interval = 86400，opt-parser = false , 启用 = true
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/Bing/Bing.list，tag = Bing，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用 = true
+https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/QuantumultX/Rule/OpenAI.snippet，tag = Open AI，force-policy = 香港解锁场景，update-interval = 86400，opt-parser = 假，启用 = 真
+https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/QuantumultX/Rule/ApplePushNotificationService.snippet，标签 = Apple 推送通知服务，force-policy = direct，update-interval = 86400，opt-parser = 假，启用 = 真
+https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/QuantumultX/Rule/AppleID.snippet，标签= Apple ID，force-policy = direct，update-interval = 86400，opt-parser = false , 启用 = true
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/TestFlight/TestFlight.list，标签= TestFlight，强制策略=直接，更新间隔= 86400，opt-parser = false，启用=真
+https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/QuantumultX/Rule/AppStore.snippet，标签=应用商店，强制策略=直接，更新间隔= 86400，选择解析器= false , 启用=假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/GitHub/GitHub.list，tag = GitHub，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用=假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/Netflix/Netflix.list，tag = Netflix，force-policy = 新加坡解锁场景，update-interval = 86400，opt-parser = 假，启用 = 假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/YouTube/YouTube.list，tag = YouTube，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用=假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/Disney/Disney.list，tag = Disney，force-policy = 香港解锁场景，update-interval = 86400，opt-parser =假，启用=假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/Twitter/Twitter.list，tag = Twitter，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用=假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/Spotify/Spotify.list，tag = Spotify，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用=假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/Google/Google.list，tag = Google，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用=假
+https://gitlab.com/lodepuly/proxy_tool_resources/-/raw/master/rule/QuantumultX/OneDrive/OneDrive.list，tag = OneDrive，force-policy = 香港场景，update-interval = 86400，opt-parser = false , 启用=假
+FILTER_LAN，标记 = LAN，强制策略 = 直接，启用 = true
+FILTER_REGION，标记 = CN 区域，强制策略 = 直接，启用 = true
+[重写远程]
+https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Tool/QuantumultX/Rewrite/TestFlight.snippet，标签= TestFlight解锁，更新间隔= 86400，opt-parser = false，启用= true
+
+[服务器本地]
+[过滤器本地]
+决赛，香港场景
+[重写本地]
+[任务本地]
+[http_后端]
+[中间人]
+密码=
+p12=
