@@ -132,7 +132,7 @@ http://jiasuplus.com/fenxiangfuli/jiaocheng/quantumultx.html
 生成证书-配置证书-信任证书（两个位置）
 切换到规则分流模式
 
-4）测试节点连通性
+- [ ] 4）测试节点连通性
 
 
 ***3、启动qx开关***
